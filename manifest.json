@@ -1,0 +1,9 @@
+{
+  "name": "Killstreak Sound",
+  "version_number": "1.0.0",
+  "website_url": "",
+  "description": "Adds a valorant killstreak sound",
+  "dependencies": [
+    "S2Mods-ClientKillCallback-2.0.1"
+  ]
+}

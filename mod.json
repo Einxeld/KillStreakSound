@@ -1,17 +1,17 @@
 {
-   "Name": "Example.Mod",
-   "Description": "A cool mod that does cool stuff",
-   "Version": "1.0.0",
-   "DownloadLink": "https://northstar.thunderstore.io/package/download/Example/Mod/",
+	"Name": "Einxeld.Killstreak Sound",
+	"Description": "Adds a valorant killstreak sound",
+	"LoadPriority": 2,
+	"RequiredOnClient": false,
+	"Version": "1.0.0",
 
-   "LoadPriority": 0,
-   "ConVars": [],
-   "Scripts": [{
-      "Path": "example.nut",
-      "RunOn": "(CLIENT || SERVER) && MP",
-      "ClientCallback": {
-         "Before":"example_callback"
-      }
-   }],
-   "Localisation": []
+	"Scripts": [
+		{
+			"Path": "KillstreakSound.nut",
+			"RunOn": "CLIENT && MP",
+			"ClientCallback": {
+				"After": "KillstreakSound_Init"
+			}
+		}
+	]
 }
